@@ -37,19 +37,22 @@ More information about HGCAL can be found in the Technical Design Report (TDR) [
 In this section you can find some useful material to start getting familiar with HGCAL and the structure of the data we are going to analyze in this mini-stage.
 
 * Set of slides by Artur: HGCAL beam test summary:
-	https://github.com/bonanomi/PHYS584/slides/HGC_TBOct2018_Summary.pdf
+
+	https://github.com/bonanomi/PHYS584/blob/master/slides/HGC_TBOct2018_Summary.pdf
 
 
 * Set of slides by Thorben, describing the structure of the TTrees we are going to use in this analysis:
-	https://github.com/bonanomi/PHYS584/slides/Reco_ntuples_06Nov2018.pdf
+
+	https://github.com/bonanomi/PHYS584/blob/master/slides/Reco_ntuples_06Nov2018.pdf
 
 
 * Set of slides on 2018 beam tests results:
-	https://github.com/bonanomi/PHYS584/slides/171009_HGCAL_Bonanomi_IPRD19.pdf
 
+	https://github.com/bonanomi/PHYS584/blob/master/slides/171009_HGCAL_Bonanomi_IPRD19.pdf
+	
 Do not hesitate to ask me any question or for additional material.
 
-### <a name="S-environment"></a>Setting up the working environment[^*]
+### <a name="S-environment"></a>Setting up the working environment [^a]
 
 You should first set up your laptop in a way that you can connect to the LLR servers and use the Jupyter notebook from the outside. For this, you need to create a SSH key and upload it to any LLR server.
 If you are using an operating system of the Microsoft Windows family, you can install Ubuntu via the Linux Subsystem for Windows and start a terminal emulator this way.
@@ -95,11 +98,17 @@ You can now start the notebook from another terminal while keeping the proxy ope
 For the access to the notebook from the outside, you have to configure the proxy in your browser. Under your browser network configurations, you should configure the proxy manually and put `127.0.0.1` as SOCKS host as well as `8888` as port. Pick SOCKS v5 when in doubt. When you want to use your browser without the tunnel after you finished your session, you have to disable the manual proxy again.
 
 
-[^*]: From [Jonas' ministage repository](https://llrgit.in2p3.fr/rembser/hgc-testbeam-mini-stage#how-to-get-into-the-analysis-environment).
+[^a]: From [Jonas' ministage repository](https://llrgit.in2p3.fr/rembser/hgc-testbeam-mini-stage#how-to-get-into-the-analysis-environment).
 
 ### <a name="S-tools"></a>Analysis tools
-In this ministage we are going to use the `python` environment for our analysis. Have a look at the [tutorials](https://github.com/bonanomi/PHYS584/tutorials/) folder to find some notebooks with quick examples on [`numpy`](https://numpy.org/) and [`matplotlib`](https://matplotlib.org/). The data we are going to use come in `.root` format, a very common one in HEP as it was born together with the ROOT framework, one of the most used frameworks for data analysis in high energy physics. Here we are going to use [`uproot`](https://github.com/scikit-hep/uproot), a reader and a writer of the ROOT file format using only python and numpy, to open our ROOT files as [`pandas` data frames](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html). 
+In this ministage we are going to use the `python` environment for our analysis. Have a look at the [tutorials](https://github.com/bonanomi/PHYS584/tree/master/tutorials) folder to find some notebooks with quick examples on [`numpy`](https://numpy.org/) and [`matplotlib`](https://matplotlib.org/). The data we are going to use come in `.root` format, a very common one in HEP as it was born together with the ROOT framework, one of the most used frameworks for data analysis in high energy physics. Here we are going to use [`uproot`](https://github.com/scikit-hep/uproot), a reader and a writer of the ROOT file format using only python and numpy, to open our ROOT files as [`pandas` data frames](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.html). 
 
+The entry point for the work we are going to do is the `tutorials` folder. The best strategy for you to work is to clone this repository, add a new folder (e.g. `work`) and develop your notebooks starting from the questions and the exercises you have under the `tutorials` folder. 
+
+Do not forget your best friend when working with the code: the internet! The internet is an extremely powerful source for python-related questions. Check references such as [`stack overflow`](https://stackoverflow.com/), [Jake VanderPlas website](http://vanderplas.com/)
+and his [open-source book](https://jakevdp.github.io/PythonDataScienceHandbook/). 
+
+Have a look at this article: ["Everything you wanted to know about Data Analysis and Fittingbut were afraid to ask"](https://arxiv.org/pdf/1210.3781.pdf).
 
 ### <a name="S-references"></a>References
 

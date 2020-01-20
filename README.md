@@ -15,6 +15,11 @@ Content of this README:
 * [Description of the data content](#S-data-content)
 * [References](#S-references)
 
+To have a better understanding of calorimetry, I highly suggest [this set of slides as an entry point](https://github.com/bonanomi/PHYS584/blob/master/slides/L10_Calorimetry.pdf).
+
+**Remember:**  Always feel free to ask questions, either for curiosity or for a better understanding of what you are doing!
+
+> *There are naive questions, tedious questions, ill-phrased questions, questions put after inadequate self-criticism. But every question is a cry to understand the world. **There is no such thing as a dumb question.***
 
 ### <a name="S-introduction"></a>The High Granularity Calorimeter (HGCAL)
 
@@ -35,6 +40,10 @@ More information about HGCAL can be found in the Technical Design Report (TDR) [
 #### <a name="S-material"></a>Material on HGCAL beam tests
 
 In this section you can find some useful material to start getting familiar with HGCAL and the structure of the data we are going to analyze in this mini-stage.
+
+* Set of slides by Artur: introduction to HGCAL
+
+	https://github.com/bonanomi/PHYS584/blob/master/slides/ALobanov_HGCAL_ICHEP2018.pdf
 
 * Set of slides by Artur: HGCAL beam test summary:
 
